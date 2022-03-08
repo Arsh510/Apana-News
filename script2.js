@@ -69,7 +69,7 @@ function getData() {
                         <div class="card-body">
                             <h5 class="card-title">${values.title}</h5>
                             <p class="card-text">${values.description}</p>
-                            <a href="${values.url}" target="_blank" class="btn btn-primary">Read More...</a>
+                            <a href="${values.url}" target="_blank" class="btn btn-dark">Read More...</a>
                         </div>
                         <img src="${values.image}" class="card-img-bottom" alt="...">
                     </div>`;
