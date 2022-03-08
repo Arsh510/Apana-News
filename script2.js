@@ -63,18 +63,16 @@ function getData() {
         let newsHtml = "";
         newsData.forEach((values) => {
             news = `<div class="card text-center my-3 mx-3">
-                        <div class="card-header">
+                        <div class="card-header fw-bolder">
                         Author : ${values.author}
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title">${values.title}</h5>
+                            <h5 class="card-title fw-bold">${values.title}</h5>
                             <p class="card-text">${values.description}</p>
                             <a href="${values.url}" target="_blank" class="btn btn-dark">Read More...</a>
                         </div>
                         <img src="${values.image}" class="card-img-bottom" alt="...">
                     </div>`;
-            
-
             newsHtml += news;
         })
         document.getElementById("displaytNews").innerHTML = newsHtml;
